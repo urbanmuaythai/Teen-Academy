@@ -177,6 +177,15 @@ footer .fh{font-family:'Playfair Display'; font-size:1.6rem; color:var(--cream);
 footer .fq{font-family:'Playfair Display'; font-style:italic; max-width:540px; margin:20px auto; color:#cfc7b8; font-size:1.05rem; line-height:1.7;}
 footer .fc{display:inline-block; margin-top:30px; font-size:.85rem; letter-spacing:.08em; color:var(--gold-light); text-decoration:none;}
 footer .fc:hover{text-decoration:underline;}
+.footer-contact{max-width:900px; margin:42px auto 0; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; text-align:left;}
+.contact-card{padding:24px; border:1px solid rgba(227,172,31,.24); border-radius:10px; background:rgba(255,255,255,.035);}
+.contact-label{font-family:'Bebas Neue',sans-serif; font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-light); margin-bottom:12px;}
+.contact-card p{margin:0; color:#d6cebf; font-size:.88rem; line-height:1.6;}
+.contact-card a{color:#f0e9da; text-decoration:none; transition:color .2s ease;}
+.contact-card a:hover,.contact-card a:focus-visible{color:var(--gold-light); text-decoration:underline;}
+.social-links{display:flex; flex-wrap:wrap; gap:10px;}
+.social-links a{display:inline-flex; align-items:center; padding:9px 13px; border:1px solid rgba(227,172,31,.28); border-radius:30px; font-size:.78rem; font-weight:700;}
+@media (max-width:760px){.footer-contact{grid-template-columns:1fr}.contact-card{text-align:center}.social-links{justify-content:center}}
 footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255,255,255,.08); font-size:.72rem; letter-spacing:.05em;}
 
 @media print{ .side-nav,.site-header,.progress-bar,.scroll-cue{display:none !important;} }
@@ -465,6 +474,24 @@ footer .fbottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(255
   <div class="fh">Welcome to the Academy</div>
   <p class="fq">&ldquo;The mistake most gyms make is they create classes. We've built an education system &mdash; a clear pathway for every student to become the best version of themselves through Muaythai.&rdquo;</p>
   <p>We look forward to watching your teen grow throughout their journey with Urban Muaythai.</p>
+  <div class="footer-contact">
+    <div class="contact-card">
+      <div class="contact-label">Visit the Gym</div>
+      <p><a href="https://maps.google.com/?q=2172+Gold+Coast+Highway+Miami+QLD+4220" target="_blank" rel="noopener noreferrer">Unit 1/2172 Gold Coast Highway<br>Miami, QLD 4220</a></p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-label">Contact Urban</div>
+      <p><a href="tel:+61413545908">0413 545 908</a><br><a href="mailto:getfit@urbanmuaythai.com">getfit@urbanmuaythai.com</a></p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-label">Follow Urban</div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/urbanmuaythaigym/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/urbanmuaythai/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.youtube.com/@Urbanfightgym" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </div>
+    </div>
+  </div>
   <a class="fc" href="https://www.urbanmuaythai.com/">www.urbanmuaythai.com</a>
   <div class="fbottom">&copy; Urban Muaythai Teen Academy &middot; Stage 2 of the Urban Muaythai Academy</div>
 </footer>
